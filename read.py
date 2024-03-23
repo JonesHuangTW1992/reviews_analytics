@@ -29,5 +29,15 @@ for d in data:
 print('一共有', len(new), '筆留言長度小於100個字')
 # 若寫在for迴圈內，則會每有一則留言就顯示一次
 
-#印篩選完的東西看看
+# 印篩選完的東西看看
 print(new[0])
+print(new[1])
+
+# 另一個篩選範例
+good = []
+for d in data:
+	if 'good' in d: # 如果'good'這個字有在d裡面
+		good.append(d) # 就加入good清單
+print('一共有', len(good), '筆留言中提到good')
+print(good[0])
+
