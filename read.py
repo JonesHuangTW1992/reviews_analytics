@@ -20,3 +20,14 @@ for d in data: # 每一筆資料命名為d
 	# print(sum_len) = 顯示目前留言字數加總進度
 print('平均留言長度是', sum_len/len(data), '個字')
 # sum_len/len(data) = 留言總字數/留言總筆數 = 留言平均長度
+
+#篩選概念
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有', len(new), '筆留言長度小於100個字')
+# 若寫在for迴圈內，則會每有一則留言就顯示一次
+
+#印篩選完的東西看看
+print(new[0])
