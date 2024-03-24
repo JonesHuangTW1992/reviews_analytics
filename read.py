@@ -39,5 +39,17 @@ for d in data:
 	if 'good' in d: # 如果'good'這個字有在d裡面
 		good.append(d) # 就加入good清單
 print('一共有', len(good), '筆留言中提到good')
-print(good[0])
 
+# 進階寫法(同上題結果)
+good = [d for d in data if 'good' in d]
+print('一共有', len(good), '筆留言中提到good')
+# 
+
+# 裝1進清單
+good = [1 for d in data if 'good' in d]
+print(good)
+
+# 裝運算結果('bad' in d)進清單
+bad = ['bad' in d for d in data]
+# 'bad' in d = 是非題
+print(bad)
